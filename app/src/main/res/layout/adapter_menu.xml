@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="2dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/adapter_menu_img_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="book icon" />
+
+    <TextView
+        android:id="@+id/adapter_menu_txt_title"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

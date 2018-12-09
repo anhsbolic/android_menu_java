@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.StaticMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_1"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linear_menu_book_2"
+        app:layout_constraintBottom_toTopOf="@id/linear_menu_book_5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.25">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 1"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_2"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/linear_menu_book_1"
+        app:layout_constraintBottom_toBottomOf="@id/linear_menu_book_1"
+        app:layout_constraintStart_toEndOf="@id/linear_menu_book_1"
+        app:layout_constraintEnd_toStartOf="@id/linear_menu_book_3">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 2"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_3"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/linear_menu_book_1"
+        app:layout_constraintBottom_toBottomOf="@id/linear_menu_book_1"
+        app:layout_constraintStart_toEndOf="@id/linear_menu_book_2"
+        app:layout_constraintEnd_toStartOf="@id/linear_menu_book_4">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 3"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_4"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/linear_menu_book_1"
+        app:layout_constraintBottom_toBottomOf="@id/linear_menu_book_1"
+        app:layout_constraintStart_toEndOf="@id/linear_menu_book_3"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 4"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_5"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/linear_menu_book_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linear_menu_book_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 5"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_6"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/linear_menu_book_5"
+        app:layout_constraintBottom_toBottomOf="@id/linear_menu_book_5"
+        app:layout_constraintStart_toEndOf="@id/linear_menu_book_5"
+        app:layout_constraintEnd_toStartOf="@id/linear_menu_book_7"
+        android:layout_marginStart="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 6"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_menu_book_7"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/linear_menu_book_5"
+        app:layout_constraintBottom_toBottomOf="@id/linear_menu_book_5"
+        app:layout_constraintStart_toEndOf="@id/linear_menu_book_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/book"
+            android:contentDescription="book icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="Buku 7"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
